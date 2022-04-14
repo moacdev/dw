@@ -29,7 +29,7 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   agency: [
-    'https://via.placeholder.com/964x723/1071ef/FFFFFF',
+    '/images/Bamako.jpg',
     'https://via.placeholder.com/1280x825/99d8ff/FFFFFF',
     'https://via.placeholder.com/490x327/ffc999/FFFFFF',
     'https://via.placeholder.com/490x327/ffc999/FFFFFF',
