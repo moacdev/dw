@@ -14,37 +14,20 @@ import TitleIcon from '../Title/WithIcon';
 import Card from '../Cards/Default';
 import DotsParallax from '../Parallax/Dots';
 
-const servicesList = [
-  {
-    title: 'Lorem Ipsum',
-    desc: 'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-    img: imgApi.agency[2]
-  }, {
-    title: 'Etiam rhoncus',
-    desc: 'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-    img: imgApi.agency[3]
-  }, {
-    title: 'Duis fermentum',
-    desc: 'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-    img: imgApi.agency[4]
-  },
-  {
-    title: 'Lorem Ipsum',
-    desc: 'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-    img: imgApi.agency[2]
-  }, {
-    title: 'Etiam rhoncus',
-    desc: 'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-    img: imgApi.agency[3]
-  }, {
-    title: 'Duis fermentum',
-    desc: 'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-    img: imgApi.agency[4]
-  }
-];
 
 function Services(props) {
   const { t } = props;
+  const servicesList = [
+    {
+      title: t('common:services.consulting.title'),
+      desc: t('common:services.consulting.desc'),
+      img: imgApi.agency[2]
+    }, {
+      title: t('common:services.our_products.title'),
+      desc: t('common:services.our_products.desc'),
+      img: imgApi.agency[3]
+    }
+  ];
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
   const classes = useStyles();
@@ -81,7 +64,7 @@ function Services(props) {
       const lastSlide = Math.floor(servicesList.length - limit);
       slider.current.slickGoTo(lastSlide);
     }
-  }, []);
+  }, [servicesList.length, theme.direction]);
 
   return (
     <div className={classes.root}>
@@ -96,16 +79,22 @@ function Services(props) {
                 </div>
               </div>
             )}
-            {servicesList.map((item, index) => (
-              <div className={classes.item} key={index.toString()}>
-                <Card
-                  title={item.title}
-                  desc={item.desc}
-                  img={item.img}
-                  button={t('common:agency-landing.services_button')}
-                />
-              </div>
-            ))}
+            <div className={classes.item}>
+              <Card
+                title={t('common:services.consulting.title')}
+                desc={t('common:services.consulting.desc')}
+                img={imgApi.agency[2]}
+                button={t('common:agency-landing.services_button')}
+              />
+            </div>
+            <div className={classes.item}>
+              <Card
+                title={t('common:services.our_products.title')}
+                desc={t('common:services.our_products.desc')}
+                img={imgApi.agency[3]}
+                button={t('common:agency-landing.services_button')}
+              />
+            </div>
             {isDesktop && (
               <div className={classes.item}>
                 <div className={classes.carouselProp}>

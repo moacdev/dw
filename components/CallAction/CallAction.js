@@ -44,7 +44,7 @@ function CallAction(props) {
               </Grid>
               <Grid item md={3} xs={12}>
                 <Grid container alignItems="center">
-                  <Button size="large" variant="outlined" color="secondary" href="/contact" className={classes.button}>
+                  <Button size="large" variant="outlined" color="secondary" href="#address" className={classes.button}>
                     {t('common:agency-landing.cta_btn')}
                     <SendIcon className={classes.rightIcon} />
                   </Button>

@@ -13,13 +13,14 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
 import Expertise from '../components/Expertise';
-import CaseStudies from '../components/CaseStudies';
+// import CaseStudies from '../components/CaseStudies';
 import CallAction from '../components/CallAction';
 import MapAddress from '../components/MapAddress';
 import Footer from '../components/Footer';
 import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
 import brand from '~/public/text/brand';
+import '~/public/css/app.css';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({
@@ -102,9 +103,9 @@ function Landing(props) {
           <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="testimonials">
             <Testimonials />
           </section>
-          <section id="case-studies">
+          {/* <section id="case-studies">
             <CaseStudies />
-          </section>
+          </section> */}
           <section className={classes.spaceTopShort} id="call-to-action">
             <CallAction />
           </section>

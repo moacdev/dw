@@ -24,6 +24,16 @@
   "pt": "󠁥󠁮󠁧󠁿Português",
   "id": "󠁥󠁮󠁧󠁿Bahasa Indonesia",
   "ar": "󠁥󠁮󠁧󠁿العربيّة",
+  "services": {
+    "consulting": {
+      "title": "Consultant",
+      "desc": "Nos clients nous confient leurs problèmes commerciaux complexes et nous livrons toujours des produits de haute qualité."
+    },
+    "our_products": {
+      "title": "Nos produits",
+      "desc": "Nous investissons dans nos propres produits innovants conçus pour un usage quotidien et vous simplifions un peu la vie.."
+    }
+  },
   "agency-landing": {
     "header_about": "à propos",
     "header_services": "services",
@@ -47,7 +57,7 @@
     "about_quote": "Ça laisse un goût doux-amer C'est ce qu'on appelle le blues",
     "services_title": "Nos services",
     "services_button": "voir le détail",
-    "expertise_title": "Notre savoir-faire",
+    "expertise_title": "Notre expertise",
     "expertise_subtitle": "Un projet réussi se construit avec une équipe performante.",
     "expertise_paragraph": "C'est pourquoi nous mettons à votre disposition les ressources humaines dont vous avez besoin pour vous constituer quand vous en avez besoin. Nos équipes on_shoring & near offshoring sont formées et encadrées au sein de Nous. Votre équipe est dédiée à vos projets. Et l'équipe est flexible !",
     "testimonial_title": "témoignages clients",

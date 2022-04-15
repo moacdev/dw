@@ -19,7 +19,7 @@ function Counter(props) {
             <div className={classes.counterItem}>
               <div className={classes.text}>
                 <Typography variant="h3" className={text.title}>
-                  +0
+                  {t('common:agency-landing.about_employee_top')}
                 </Typography>
                 <Typography component="p" className={text.subtitle}>
                   {t('common:agency-landing.about_employee')}
@@ -31,7 +31,7 @@ function Counter(props) {
             <div className={classes.counterItem}>
               <div className={classes.text}>
                 <Typography variant="h3" className={text.title}>
-                  +0
+                  {t('common:agency-landing.about_projects_top')}
                 </Typography>
                 <Typography component="p" className={text.subtitle}>
                   {t('common:agency-landing.about_projects')}
@@ -43,7 +43,7 @@ function Counter(props) {
             <div className={classes.counterItem}>
               <div className={classes.text}>
                 <Typography variant="h3" className={text.title}>
-                  +0
+                  {t('common:agency-landing.about_client_top')}
                 </Typography>
                 <Typography component="p" className={text.subtitle}>
                   {t('common:agency-landing.about_client')}

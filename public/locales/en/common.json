@@ -24,6 +24,16 @@
   "pt": "󠁥󠁮󠁧󠁿Português",
   "id": "󠁥󠁮󠁧󠁿Bahasa Indonesia",
   "ar": "󠁥󠁮󠁧󠁿العربيّة",
+  "services": {
+    "consulting": {
+      "title": "Consulting",
+      "desc": "Our clients entrust us with their complex business problems and we deliver high quality products always."
+    },
+    "our_products": {
+      "title": "Our products",
+      "desc": "We invest in our own innovative products built for everyday use, and make life a little easier for you."
+    }
+  },
   "agency-landing": {
     "header_about": "about",
     "header_services": "services",

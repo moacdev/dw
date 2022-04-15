@@ -63,10 +63,11 @@ function Header(props) {
     t
   } = props;
   const [menuList] = useState([
-    createData(navMenu[0], '#' + navMenu[0], 200),
-    createData(navMenu[1], '#' + navMenu[1], 200),
-    createData(navMenu[2], '#' + navMenu[2], 200),
-    createData(navMenu[3], '#' + navMenu[3], 200),
+    createData(navMenu[0], '#' + navMenu[0], 0),
+    createData(navMenu[1], '#' + navMenu[1], 0),
+    createData(navMenu[2], '#' + navMenu[2], 0),
+    createData(navMenu[4], '#address', 0),
+    // createData(navMenu[3], '#' + navMenu[3], 200),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
@@ -135,14 +136,14 @@ function Header(props) {
                       )}
                     </li>
                   ))}
-                  <li>
-                    <Button href={routeLink.agency.contact}>
+                  {/* <li>
+                    <Button href="#address">
                       {t('common:agency-landing.header_contact')}
                     </Button>
-                  </li>
+                  </li> */}
                 </Scrollspy>
               )}
-              <Settings toggleDark={onToggleDark} toggleDir={onToggleDir} invert={invert} />
+              {/* <Settings toggleDark={onToggleDark} toggleDir={onToggleDir} invert={invert} /> */}
             </nav>
           </div>
         </Container>
